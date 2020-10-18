@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body onload="atOnload3()">
+    <div class="col-12">
+        <div class="col-12 nav">
+            <a> <img src="Images/QuicHealth logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+
+        </div>
+        <div class="col-12 navbar-second">
+            <a href="#" onclick="showDrop()" class="dropdown"><span> &#9776;</span>
+                <div class="dropdown-content1">
+                    <a href="#">Home</a>
+                    <a href="#"> About Us</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Contact Us</a>
+                    <a href="/signin">Sign In</a>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-12 Dashboard-parent">
+    <div class="menu">
+            
+            <div class="submenu">
+            <i class="fas fa-arrow-left"></i> <br>
+            <ul>
+               
+                <li><img src="Images/Vector.png" alt="icon" class="list_icon" > <a href="patient_dashboard.html">Overview</a></li>
+                <li> <img src="Images/appointment.png" alt="icon" class="list_icon"> <a href="appointment_dashboard.html">Appointments</a></li>
+                <li> <img src="Images/notification.png" alt="icon" class="list_icon"> <a href="notification_dashboard.html">Notification</a></li>
+                <li> <img src="Images/meeting.png" alt="icon" class="list_icon"> <a href="photo_dashboard.html">Meeting</a></li>
+                <li> <img src="Images/health_profile.png" alt="icon" class="list_icon"> <a href="#">Health Profile</a></li>
+                <li> <img src="Images/setting.png" alt="icon" class="list_icon"> <a href="settings_dashboard.html">Settings</a></li>
+                <li> <img src="Images/help.png" alt="icon" class="list_icon"> <a href="help_dashboard.html">Help</a></li>
+                <li> <img src="Images/signout.png" alt="icon" class="list_icon"> <a href="signIn.html">Sign Out</a></li>
+    
+            </ul>
+            
+            </div>
+            <header class="header">
+    
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><img src="Images/Vector.png" alt="icon" class="list_icon1" > <a href="patient_dashboard.html">Overview</a></li>
+                    <li> <img src="Images/appointment.png" alt="icon" class="list_icon1"> <a href="appointment_dashboard.html">Appointments</a></li>
+                    <li> <img src="Images/notification.png" alt="icon" class="list_icon1"> <a href="notification_dashboard.html">Notification</a></li>
+                    <li> <img src="Images/meeting.png" alt="icon" class="list_icon1"> <a href="photo_dashboard.html">Meeting</a></li>
+                    <li> <img src="Images/health_profile.png" alt="icon" class="list_icon1"> <a href="#">Health Profile</a></li>
+                    <li> <img src="Images/setting.png" alt="icon" class="list_icon1"> <a href="settings_dashboard.html">Settings</a></li>
+                    <li> <img src="Images/help.png" alt="icon" class="list_icon1"> <a href="help_dashboard.html">Help</a></li>
+                    <li> <img src="Images/signout.png" alt="icon" class="list_icon1"> <a href="signIn.html">Sign Out</a></li>
+                </ul>
+            </header>
+            
+            
+        </div>
+        <div class="health_profile">
+            <div class="health_parent">
+                <div class="health_child">
+                    <h2 onclick="showHealthHistory ()">Health History</h2>
+                    
+                </div>
+                <div class="comment">
+                    <div>
+                        <h2 onclick="showDoctorsComment()">Doctor's Comment</h2> 
+                    </div>
+    
+                </div>
+                <div class="comment-div col-12">
+                    <h3>No Doctor's comment Yet</h3>
+                </div>
+                <div class="health-div">
+                    <div class="col-12 sub_healthdiv">
+                        <hr>
+                        <p>Do you have any allergies?</p>
+                        <form action="#">
+                            <input type="radio" name="response" value="yes" > Yes
+                            <input type="radio" name="response" value="no" > No
+                        </form>
+                        <p>Are you currently taking any medication?</p>
+                        <form action="#">
+                            <input type="radio" name="response" value="yes" > Yes
+                            <input type="radio" name="response" value="no" > No
+                        </form>
+                        <p>Do you have any Health Condition?</p>
+                        <form action="#">
+                            <input type="radio" name="response" value="yes" > Yes
+                            <input type="radio" name="response" value="no"> No
+                        </form>
+                        <p>Do you have any Health Condition?</p>
+                        <form action="#">
+                            <input type="radio" name="response" value="yes" > Yes
+                            <input type="radio" name="response" value="no"> No
+                        </form>
+                        <p>Are you currently taking any medication?</p>
+                        <form action="#">
+                            <input type="radio" name="response" value="yes" > Yes
+                            <input type="radio" name="response" value="no"> No
+                        </form> <br>
+                        <hr>
+                        <h3>Enter Your body Measurement</h3>
+                        <p>Current Height <input type="text" class="input_profile">ft <input type="text"class="input_profile">in</p>
+                        <p>Current Weight <input type="text" class="input_profile">lbs</p>
+                        <hr>
+                        <h3>Enter Your Current Vitals</h3>
+                        <p>Blood Pressure <input type="text" class="input_profile"> / <input type="text" class="input_profile">in</p>
+                        <p>Temperature <input type="text" class="input_profile"> <sup>o</sup> C</p>
+                    
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+           
+        </div>
+        
+    </div>
+
+    <script src="js/quichealth.js"></script>
+
+
+</body>
+
+</html>
